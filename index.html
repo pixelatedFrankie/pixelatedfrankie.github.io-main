@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frankie Dixon — Senior Front End Engineer</title>
+    <meta name="description" content="Frankie Dixon, Senior Front End Engineer, specializes in crafting user-centric digital experiences with a focus on sustainability and theory of mind. Bridging natural sciences and programming for meaningful user interactions.">
+    <link rel="stylesheet" href="dist/css/styles.css">
+  </head>
+  <body>
+    <header class="bg-white shadow-sm sticky top-0">
+      <div class="section-container flex justify-between items-center py-4 !mt-0">
+        <div class="text-sm lg:text-2xl font-semibold">
+          Pixelated Frankie
+        </div>
+
+        <nav>
+          <a href="#about" class="px-2 lg:px-4 text-xs lg:text-base text-gray-600 hover:text-black">About</a>
+          <!-- <a href="#" class="px-2 lg:px-4 text-xs lg:text-base text-gray-600 hover:text-black">Portfolio</a> -->
+          <a href="/dist/pdf/resume-frankie-dixon-10-2023.pdf" class="px-2 lg:px-4 text-xs lg:text-base text-gray-600 hover:text-black" target="_blank">Résumé</a>
+          <a href="#contact" class="px-2 lg:px-4 text-xs lg:text-base text-gray-600 hover:text-black">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="about" class="section-container max-w-md border border-gray-200 pb-16">
+      <h1 class="text-center w-full bg-slate-300 py-2 rounded">Pixelated Frankie
+        <small class="text-sm block font-normal">Frankie Dixon — Senior Front End Engineer</small>
+      </h1>
+      <div class="md:flex items-center gap-8">
+        <div class="flex flex-col items-center py-8">
+          <img src="dist/img/pixel-frankie-4.jpg" id="img-pixel-frankie" alt="" class="max-w-sm rounded-full">
+          <div class="relative inline-block py-4">
+            <div>
+              <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-slate-200 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                Change Frankie
+                <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="absolute right-0 z-10 mt-2 w-32 origin-top-right rounded-md bg-slate-200 shadow-lg" id="dropdown-menu" style="display: none;">
+              <div class="py-1">
+                <a href="#" class="image-option text-gray-700 block px-4 py-2 text-sm" data-image="1">Frankie 1</a>
+                <a href="#" class="image-option text-gray-700 block px-4 py-2 text-sm" data-image="2">Frankie 2</a>
+                <a href="#" class="image-option text-gray-700 block px-4 py-2 text-sm" data-image="3">Frankie 3</a>
+                <a href="#" class="image-option text-gray-700 block px-4 py-2 text-sm" data-image="4">Frankie 4</a>
+                <a href="#" class="image-option text-gray-700 block px-4 py-2 text-sm" data-image="5">Frankie 5</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>A Senior Front End Engineer with 15+ years of experience in developing of highperformance e-commerce solutions and teams. I specialize in HTML5, CSS3, JS/jQuery, Tailwind CSS, Django, Node, and React. I've managed teams of front-end specialists, focusing on code quality, team velocity, and web accessibility. My leadership roles have involved vendor management, stakeholder engagement, and mentorship of developers, solidified by industry accolades for innovation.</p>
+      </div>
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="section-container">
+      <h2 class="w-full max-sm:text-center my-8 text-center">Contact Frankie</h2>
+
+      <form action="https://formspree.io/f/moqorvzj" id="my-form" class="max-w-xl mx-auto" method="POST">
+        <div id="my-form-status" class="text-center w-full my-8 text-lg font-semibold"></div>
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-600">Email Address
+            <input type="email" name="email" class="border border-grey-200 mt-1 p-2 w-full rounded-md" required>
+          </label>
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-600">Message
+            <input type="text" name="message" rows="4" class="border border-grey-200 mt-1 p-2 w-full rounded-md" required></textarea>
+          </label>
+        </div>
+        <button type="submit" class="px-4 py-2 bg-lime-700 text-white rounded w-full font-bold">
+          Full Send
+        </button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="dist/js/index.js"></script>
+  </body>
+</html>
